@@ -3,24 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WEB-115 Final Project</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="javascript" href="projectJS.js">
+    <script src="projectJS.js"></script>
 </head>
 <body>
     <main>
         <!--Banner -->
-        <img src="">
+        <img src="banner.png">
         <!--Meal Plan form -->
         <form>
-            <!--Add in the different rows and columns for a weekly meal plan. so 35 cells, 7x5 (brekkie, snack, lunch, snack, and dindin).  -->
 
-            <!--Add a button to clear the form -->
-            
             <!--add fields to collect name, email, and caloric goal for the week. The form should not be able to be submitted until the email address is validated through regex -->
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+              
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+              
+                <label>Fitness Goal:</label>
+                <input type="radio" id="option1" name="radioOption" value="option1" required>
+                <label for="option1">Gain Weight</label>
+                <input type="radio" id="option2" name="radioOption" value="option2" required>
+                <label for="option2">Lose Weight</label>
+                
+                <!--Button to initialize the form  -->
+                <input id="submit" type="submit" value="Submit">
 
-            <!--Button to initialize the form  -->
-            <button>Submit</button>
+                <!--Add a button to clear the form -->
+                <input type="reset">
+              </form>
+            
+
+            
         </form>
     </main>
 </body>
